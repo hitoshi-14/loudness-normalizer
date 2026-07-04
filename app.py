@@ -155,7 +155,7 @@ if uploaded_file is not None:
             while process.poll() is None:
                 elapsed = time.time() - start_time
                 elapsed_str = format_time_str(elapsed)
-                status_box.warning(f"⚙️ 2/3: 音声を解析・最適化中... [{elapsed_str}経過] (フリーズしていません)")
+                status_box.warning(f"⚙️ 2/3: 音声を解析・最適化中... [{elapsed_str}経過]")
                 time.sleep(1)
                 
             if process.returncode != 0:
